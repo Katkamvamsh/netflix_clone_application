@@ -1,0 +1,134 @@
+.hero-image{
+  position: relative;
+}
+.banner-img{
+  width: 100%;
+  mask-image: linear-gradient(to right ,transparent);
+  }
+
+.hero-caption-container{
+  position: absolute;
+  width: 100%; /* dont write 100px here */
+  padding-left: 5%;
+bottom: 0%;
+
+
+}
+.hero-caption-container p{
+  max-width: 700px;
+  width: 50%;
+  color: rgb(30, 0, 255);
+  font-weight: bold;
+  font-size: 22px;
+  font-family: "Roboto";
+  font-style: italic;
+}
+
+.caption-img{
+  width: 90%;
+  max-width: 450px;
+  margin-bottom: 30px;
+}
+
+
+
+.hero_btns_container{
+margin: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.hero_btns_container .btn  {
+  
+border-radius: 9px;
+padding: 7px 15px;
+gap: 20px;
+display:flex;
+align-items: center;
+height: 6.2vh;
+font-size: 15px;
+cursor: pointer;
+border: none;
+background-color: rgb(130, 37, 173);
+}
+ img{
+width: 2vw;
+
+}
+.dark_btn{
+width: 12vw;
+background-color: rgb(14, 224, 231);
+color: rgb(50, 137, 214);
+
+}
+
+.btn:hover{
+  background-color: blueviolet;
+}
+
+.more_cards{
+  padding-left: 5%;
+}
+
+
+@media(max-width:1024px){
+  .a{
+display: none;
+background-color: red;
+  }
+  .caption-img{
+       width: 40vw;
+    height: 20vh;
+  }
+  .hero-caption-container p{
+    font-size: 20px;
+    color: aliceblue;
+  }
+}
+@media(max-width:800px){
+  .hero-caption-container{
+    padding-left: 4%;
+    width: 120%;
+  }
+  .caption-img{
+       
+    width: 40vw;
+    height: 20vh;
+  }
+  .hero-caption-container p{
+    font-size: 15px;
+    color: aliceblue;
+  }
+  .hero_btns_container .btn {
+    height: 6vh;
+    width: 14vw;
+    padding-left: 15px;
+    align-items: center;
+  }
+}
+
+@media(max-width:1024px){
+  .caption-img{
+    display: none;
+  }
+  .hero-caption-container p{
+    font-size: 12px;
+    color: aliceblue;
+    width: 100%;
+  }
+  .hero_btns_container .btn {
+    height: 6vh;
+    width: 16vw;
+  padding-left: 8px;
+    text-align: center;
+    
+  }
+  .icon_img{
+    width: 3vw;
+    margin-right: -8px;
+  }
+  .info_img{
+    width: 4vw;
+    margin-right: -10px;
+  }
+}
